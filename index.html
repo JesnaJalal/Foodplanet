@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <title>Food Planet</title>
+  <link rel="icon" href="images/img1.webp" type="image/icon type">
+</head>
+
+<body>
+  <!--
+      <div class="row text-white">
+        <div class="col-md-6 p-3 pl-5">
+            <h2>New Website</h2></div>
+        </div></header>-->
+  <!--navbar-->
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-danger fw-bold " href="index.html">
+
+          <img src="images/img-logo.png" alt="" style=height:90px;width:90px; />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link " aria-current="page" href="#carouselExampleCaptions">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#reviews" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Reviews
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#reviews">Action</a></li>
+                <li><a class="dropdown-item" href="#reviews">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#gallery-box">item</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">contacts</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--carousel-->
+  <div class="container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/non-veg.jpg" class="slide d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-light">Non-veg Items</h2>
+            <p class="text-light">Tasty Non-veg Items.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/veget.jpg" class="slide d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-light">Veg Items</h2>
+            <p class="text-light">Tasty Veg Items.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image2.jpg" class="slide d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-dark">Chinese Foods</h2>
+            <p class="text-dark">Tasty Chinese Foods.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--About section-->
+  <div class="about-section-box" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <div class="inner-column">
+            <h1>Welcome To <span>Food Planet</span></h1>
+            <h4>Little Story</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est voluptatem quidem saepe corrupti quo?
+              Possimus molestias maxime corporis, similique minima quaerat optio, deserunt mollitia voluptatum quae
+              aspernatur pariatur doloremque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente, accusamus reprehenderit ducimus
+              iste architecto pariatur vitae illo earum repudiandae qui porro culpa aspernatur vero quo. Perferendis
+              error nesciunt quam.</p>
+            <a class="btn btn-lg-btn-circle btn-outline-new-white" href="#">Reservation</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12"><img src="images/about.jpg" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+  <!--start qt section-->
+  <div class="qt-box qt-background">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <p class="lead">"If you are not cooking, stay out of the way and compliment the chef,"</p>
+          <span class="lead">Shantanu jana</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end section-->
+  <!--start gallery-->
+  <div class="gallery-box" id="gallery">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading-title text-center">
+            <h2 class="text-danger">Gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis dolor quia iure possimus
+              voluptatibus dolorum ullam alias et, blanditiis cum voluptatem non a officiis explicabo error eos rem
+              accusantium.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tz-gallery">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/idli.jpg ">
+              <img class="img-fluid" src="./images/idli.jpg" alt="gallery image"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/dosa.jpg">
+              <img class="img-fluid" src="./images/dosa.jpg" alt="gallery image"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/img4.jpg">
+              <img class="img-fluid" src="./images/img4.jpg " alt="gallery image"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/img6.jpg">
+              <img class="img-fluid" src="./images/img6.jpg" alt="gallery image"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/img3.jpg">
+              <img class="img-fluid" src="./images/img3.jpg" alt="gallery image"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a class="lightbox" href="./images/img5.jpg">
+              <img class="img-fluid" src="./images/img5.jpg" alt="gallery image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--customer reviews-->
+  <div class="customer-reviews-box">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading-title text-center">
+            <h2 class="text-danger">Customer Reviews</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ducimus rem sapiente fugit, provident
+              hic earum voluptate magnam cupiditate nisi nihil. Sed aut neque, vel laborum rem magni illo harum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 ms-auto me-auto text-center">
+          <div id="reviews" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner mt-4">
+              <div class="carousel-item text-center active">
+                <div class="img-box p-1 border rounded-circle m-auto">
+                  <img class="d-block w-100 rounded-circle" src="./images/quot1.webp">
+                </div>
+                <h5 class="mt-4 mb-0"><strong class="text-uppercase">Paul Mitchel</strong></h5>
+                <h6 class="text-warning m-0">Web Developer</h6>
+                <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus corrupti
+                  incidunt dolorem perspiciatis, nam ducimus possimus dolore inventore quia? Autem nisi facilis labore
+                  corporis architecto inventore ex nam eos laudantium.</p>
+              </div>
+              <div class="carousel-item text-center ">
+                <div class="img-box p-1 border rounded-circle m-auto">
+                  <img class="d-block w-100 rounded-circle" src="./images/quot1.webp">
+                </div>
+                <h5 class="mt-4 mb-0"><strong class="text-uppercase">Steve Irwin</strong></h5>
+                <h6 class="text-warning m-0">Web Designer</h6>
+                <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus corrupti
+                  incidunt dolorem perspiciatis, nam ducimus possimus dolore inventore quia? Autem nisi facilis labore
+                  corporis architecto inventore ex nam eos laudantium.</p>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="img-box p-1 border rounded-circle m-auto">
+                  <img class="d-block w-100 rounded-circle" src="./images/quot1.webp">
+                </div>
+                <h5 class="mt-4 mb-0"><strong class="text-uppercase">Daniel Defoe</strong></h5>
+                <h6 class="text-warning m-0">SEO Analyst</h6>
+                <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus corrupti
+                  incidunt dolorem perspiciatis, nam ducimus possimus dolore inventore quia? Autem nisi facilis labore
+                  corporis architecto inventore ex nam eos laudantium.</p>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviews" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviews" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--contact section-->
+      <div class="contact-info-box mt-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 arrow-right">
+
+              <i class="bi bi-telephone-forward"></i>
+              <div class="overflow-hidden">
+                <h4>Phone</h4>
+                <p class="lead">+91 3243 4566 78</p>
+              </div>
+            </div>
+            <div class="col-md-4 arrow-right">
+
+              <i class="bi bi-envelope-fill"></i>
+              <div class="overflow-hidden">
+                <h4>Email</h4>
+                <p class="lead">foodplanet@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <i class="bi bi-geo-alt"></i>
+              <div class="overflow-hidden">
+                <h4>Location</h4>
+                <p class="lead" id="location">800,Edappally, Kochi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--footer-->
+      <footer class="footer-area bg-f">
+        <div class="container" id="footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi nesciunt laudantium, vitae
+                adipisci fugiat odio quisquam consequatur porro expedita officiis quidem in ullam accusamus quod earum
+                quae minima. Sapiente.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Subscribe</h3>
+              <form class="subscribe_form">
+                <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                <button type="submit" class="submit">SUBSCRIBE</button>
+                <div class="clearfix"></div>
+              </form>
+            </div>
+            <!--social icons-->
+            <div class="col-lg-3 col-md-6">
+              <ul class="list-inline f-social">
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+                </li>
+
+              </ul>
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Contact information</h3>
+              <p class="lead">Edappally,Kochi,Kolkata</p>
+              <p class="lead"><a href="#">+91 9878 4535 45</a></p>
+              <p><a href="#">info@admin.com</a></p>
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Opening Hours</h3>
+              <p><span class="text-color">Monday:</span>Closed</p>
+              <p><span class="text-color">Tue-Wed:</span>09:00 AM-10:00 PM</p>
+              <p><span class="text-color">Thu-Fri:</span>09:00 AM-10:00 PM</p>
+              <p><span class="text-color">Sat-Sun:</span>05:00 PM-10:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <!--copyright-->
+        <div class="copyright">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="company-name">All Rights Reserved. &copy; 2022 <a href="#">
+                    <span>Food Planet</span> </a> Design By:<a href="#"><span>la</span>
+                  </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Bact to top-->
+      <a href="#" id="back-to-top" title="back to top" style="display:inline-block;"><i class="bi bi-cloud-arrow-up"
+          aria-hidden="true"></i></a>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
